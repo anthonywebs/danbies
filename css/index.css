@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #2a2c2d;
+  background-color: #f2f4f5; 
+}
+
+.col-mid {
+  justify-content: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.col-end {
+  justify-content: end;
+  margin-right: 2%;
+}
+
+.al-right{
+  text-align: right;
+}
+
+.demo {
+  width: 600px;
+  border-radius: 24px;
+  box-shadow: 0 0 8px #D0D0D0;
+}
+
+.body_bg {
+  background: url('../img/landing-page-bg.svg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.main_bg {
+  background-color: white;
+  max-width: 1200px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  margin: 0.5rem auto 4em;
+  box-shadow: 0 0 10px #D0D0D0;
+  border: 1px solid #DDDDDD;
+}
+
+.logo-row {
+  margin-top: 4rem;
+  padding-bottom: 0;
+}
+
+.b {
+  font-weight: 400;
+}
+
+.logo {
+  width: 200px;
+}
+
+.copyright {
+  margin-top: 8rem;
+  width: 100%;
+  text-align: center;
+}
+
+.inp-wr {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+
+.inp {
+  font-size: 2rem;
+  margin-top: 6px;
+  margin-bottom: 13px;
+  text-align: right;
+  width: 260px;
+  padding: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+.title {
+  color: #0272b6;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.ind_l {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.ind_m {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.ind_xl {
+  margin-left: 15%;
+  line-height: 2rem !important;
+}
+
+.mu {
+  /* font-size: 2rem; */
+  background-image: url(../img/mark-underline.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  display: inline-block;
+  margin-bottom: .625rem;
+  /* padding-bottom: .5rem; */
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.mg-b8 {
+  margin-bottom: 16px;
+}
+
+.line_sp {
+margin-top: 2rem;
+}
+
+.al_right{
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.pos_comploc {
+  margin-top: 2.3rem;
+}
+
+.al_center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.font_el {
+  font-size: 3.8rem;
+  letter-spacing: -0.01rem; 
+  color: #2a2c2d;
+  line-height: 1.23076923;
+  font-weight: 300;
+  /* max-width: 700px; */
+  margin-bottom: 1rem;
+}
+
+/* font large */
+.font_l {
+  font-size: 2.4rem;
+  letter-spacing: -0.01rem; 
+  color: #2a2c2d;
+  line-height: 1.23076923;
+  font-weight: 300;
+  /* max-width: 700px; */
+  margin-bottom: 1rem;
+}
+
+.font_lm {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+/* font medium */
+.font_m {
+  font-size: 1.8rem;
+  color: #2a2c2d;
+  line-height: 2.8rem;;
+  font-weight: 300;
+  /* max-width: 760px; */
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.font_s {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #2a2c2d;
+
+}
+/* small font */
+.font_s_title {
+  margin-top: 2rem;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #3C3C3C;
+}
+
+.font_s ul li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font_s ul li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+ul {
+  padding: 0 1em;
+}
+
+a:link, 
+a:visited {
+  font-size: 1.1rem;
+  text-decoration: none;
+  /* font-weight: 500; */
+  display: inline-block;
+  vertical-align: middle;
+  color: #0272b6;
+}
+
+a:hover, 
+a:focus  {
+  color: #00619A;
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 1px;
+}
+
+.hidden {
+  display: none !important;
+}
+  
+.blue {
+  color: #0272b6;
+}
+
+.red-bold {
+  font-weight: 500;
+  color: #ec4e3e;
+}
+
+.red {
+  color: #ec4e3e;
+}
+
+.section-border {
+  border-top: 2px solid #e0e0e0;
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 0.6rem;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .inp-wr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .ind_l, .ind_m {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ind_xl {
+    margin: 2% 0;
+    font-size: 2em;
+    line-height: 2rem !important; 
+  }
+
+  .font_el {
+    font-size: 2.4rem;
+  }
+
+  .font_l {
+    font-size: 1.5rem;
+  }
+
+  .font_m {
+    font-size: 1.1rem;
+    line-height: 1.6rem;  
+  }
+
+  .demo {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 0 8px #D0D0D0;
+  } 
+  
+}
+
