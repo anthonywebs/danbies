@@ -117,6 +117,7 @@ header {
 .size-24 {
   font-size: 1.5rem;
 }
+
 .copyright {
   align-self: flex-start;
   font-size: 1.15rem;
@@ -436,9 +437,7 @@ footer div a {
   }
 
   .danbies-wr {
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: space-between; */
     margin-bottom: 64px;
   }
   .danbies-left {
@@ -456,22 +455,8 @@ footer div a {
     margin-top: 4px;
   }
   .founder-title {
-    /* position: absolute; */
-    /* background-color: #0f172d; */
-    /* background-color: rgba(15, 23, 45, 0.85);
-    padding: 0 4px;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'poppins', sans-serif;
-    font-size: 1.25rem;
-    color: #01F2F8;
-    font-weight: 500; */
-    /* font-size: 1rem; */
-    /* width: 80%; */
     left: 12px;
     transform: none;
-    /* translateX(-50%); */
   }
 
   .person-img {
@@ -530,9 +515,18 @@ footer div a {
   }
 
   footer div {
-    padding-top: 6px;
-    flex-direction: column;
+    padding-top: 6px;    
+    flex-direction: column-reverse;
     justify-content: start;
     width: 96%;
+  }
+
+  footer div img {
+    display: none;
+    width: 128px;
+  }
+
+  .copyright {
+    align-self: center;
   }
 }
