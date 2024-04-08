@@ -6,30 +6,173 @@
   	<meta name="description" content="A leading cloud-based HR solution service provider">
     <title>HR Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="./css/float-grid.css" rel="stylesheet" type="text/css" />
-    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine&display=swap" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/danbies.css" rel="stylesheet" type="text/css" />
   </head>
-  <body class="body_bg">
-    <div class='row logo-row'> 
-      <img class='logo' src="./img/hr-solutions-logo.svg" />
-    </div>
-    <main class='main_bg' role='main'>
-      <div class='row'> 
-        <div class='col-12'>
-          <p class='font_el ind_l'>Unlocking <span class='mu'>Danbies</span>!</p>
-          <p class='font_l ind_m'>Elevate Your HR Process</p>
-          <p class='font_m ind_m'>
-            Our powerful HR Solution Suite, <span class="b">“Danbies”</span>, offers PTO, Timesheets, and Employee management, and a suite of advanced features.
-          </p>
-          <p id='js-list-title' class='font_l ind_m mg_top'>Live Demo:</p>
-          <BR />
-          <img class='ind_m demo' src="./img/demo.jpg" />
-          <div class='ind_m font_s'><BR/>* Pease submit a request for a live demo by reaching out to us at <a href='mailto:info@danbies.com'>info@danbies.com</a>
-          </div>          
+  <body class='body fi'>
+    <header> 
+      <img class='logo' src="./img/danbies-logo.png" />
+      <div class='menu-wr'>
+        <div id='js-link-danbies' onmouseout='handleMouseOut("danbies")' onmouseover='handleMouseOver("danbies")' onclick='handleScroll("js-danbies")' class='header-menu'>
+          Danbies
+        </div>
+        <div id='js-link-products' onmouseout='handleMouseOut("products")' onmouseover='handleMouseOver("products")' onclick='handleScroll("js-products")' class='header-menu'>
+          Products
+        </div>
+        <div id='js-link-contact' onmouseout='handleMouseOut("contact")' onmouseover='handleMouseOver("contact")' onclick='handleScroll("js-contact")' class='header-menu'>
+          Contact
+        </div>
+        <div onclick='handleMemberSite()' class='header-member-menu-wr'>
+          <span class='header-member-menu'>Member Only</span>
         </div>
       </div>
-      <div class='copyright'>©2024 HR Solutions All rights reserved</div>
+    </header>
+    <main role='main'>
+      <div class='title-wr'>
+        <img class='title-large' src='./img/text-danbies.png' />
+        <img class='title-small' src='./img/text-simple.png' />
+      </div>
+      <div id='js-danbies' class='section-title left-border-aqua'>
+        Danbies
+      </div>
+      <div class='danbies-wr'>
+        <div class='danbies-left'>
+          <span class='creamy-aqua size-24 narrow-space'>Welcome to  Danbies,</span> where innovation meets excellence. We embody the essence of Danbi (sweet rain in Korean), bringing forth revitalizing solutions. Comprised of a dedicated team of experts, we are driven by our passion for problem-solving, committed to delivering tailored enterprise solutions that elevate your business to new heights. With us, you'll experience the refreshing embrace of creativity, reliability, and unparalleled dedication, ensuring your success blossoms under our care.
+        </div>
+        <div class='danbies-right'>
+          <img src='./img/danbies-img.png' />
+        </div>
+      </div>
+      <div class='founder-wr'>
+        <div class='founder-title'>
+          <img class='person-img' src='./img/person-aqua.svg' />
+          <img class='person-img' src='./img/person.svg' />
+          DANBIES FOUNDERS
+          <img class='person-img flip-horizon' src='./img/person.svg' />
+          <img class='person-img flip-horizon' src='./img/person-aqua.svg' />
+        </div>
+        <div class='founder-list-wr'>
+
+          <div class='photo-wr'>
+            <div class='photo-frame photo-anthony photo-mobile'>
+              <div class='name-wr'>
+                Executive Manager
+                <span class='name'>Anthony Kim</span>
+              </div>
+            </div>
+          </div>
+          <div class='photo-wr photo-bottom'>
+            <div class='photo-frame photo-harvey photo-mobile'>
+              <div class='name-wr'>
+                Product Manager
+                <span class='name'>Harvey Oh</span>
+              </div>
+            </div>
+          </div>
+          <div class='photo-wr'>
+            <div class='photo-frame photo-yung photo-mobile'>
+              <div class='name-wr'>
+                Scrum Master
+                <span class='name'>Yung Lee</span>
+              </div>
+            </div>
+          </div>
+          <div class='photo-wr photo-bottom'>
+            <div class='photo-frame photo-byungjoo photo-mobile'>
+              <div class='name-wr margin-left-0'>
+                Lead Engineer
+                <span class='name'>Byung Joo Kim</span>
+              </div>
+            </div>
+          </div>
+          <div class='photo-wr'>
+            <div class='photo-frame photo-danbi photo-mobile'>
+              <div class='name-wr'>
+                Lead FE Engineer<br />
+                <span class='name'>Dan Bi Choi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class='photo-wr photo-bottom'>
+            <div class='photo-frame photo-yongjun photo-mobile'>
+              <div class='name-wr'>
+                Frontend Engineer
+                <span class='name'>Yongjun Kim</span>
+              </div>
+            </div>
+          </div>
+          <div class='photo-wr'>
+            <div class='photo-frame photo-hannah photo-mobile'>
+              <div class='name-wr'>
+                UI Engineer<br/>
+                <span class='name'>Hannah Kim</span>
+              </div>
+            </div>
+          </div>
+          <div class='photo-wr photo-bottom'>
+            <div class='photo-frame photo-bora photo-mobile'>
+              <div class='name-wr'>
+                UI/UX<br/>
+                <span class='name'>Bora Jeon</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id='js-products' class='section-title left-border-purple'>
+        Products
+      </div>
+      <p class='products-title'>
+        HR-Danbi<br />
+        <span class='products-subtitle'>Time-off and Timesheet Management</span>
+      </p>
+      <p class='products-desc'>
+        Introducing HR Danbi, your comprehensive solution for streamlined time-off and timesheet management. Gone are the days of grappling with complex rules and multiple time-off types; HR Danbi effortlessly navigates diverse accrual rules, ensuring seamless management tailored to your company's unique needs.
+      </p>
+      <div class='products-wr'>
+        <div class='card-wr'>  
+          <img src='./img/img-1.png' />
+          <p class='card-desc top-36'>
+            <span class='creamy-aqua'>With HR Danbi</span>, the entire time-off process is simplified from request to approval to analysis, empowering your team to focus on what truly matters. 
+          </p>
+        </div>
+        <div class='card-wr top-bot'>
+          <img src='./img/img-2.png' />
+          <p class='card-desc top-16'>
+            <span class='creamy-orange'>Say goodbye to tedious Excel spreadsheets;</span> HR Danbi revolutionizes timesheet submission, enabling you to effortlessly submit and track timesheets from anywhere, on any device, without the hassle.
+          </p>
+        </div>
+        <div class='card-wr top-mid'>          
+          <img src='./img/img-3.png' />
+          <p class='card-desc top-16'>
+            <span class='creamy-purple'>Experience the efficiency and convenience of HR Danbi</span>, where managing time-off and timesheets becomes a seamless and stress-free endeavor, allowing your team to thrive and your business to excel. 
+          </p>
+        </div>
+      </div>
+
+      <div id='js-contact' class='section-title left-border-orange'>
+        Contact us
+      </div>
+      <p class='contact-desc'>
+        For a live demonstration of 'HR-Danbi', kindly reach out to us at <a href='mailto:contact@danbies.com'>contact@danbies.com</a>
+      </p>
+
     </main>
-  </body>
+</body>
+<footer>
+  <div>
+    <a href='https://www.linkedin.com/groups/14237377/' target='_blank'><img src='./img/phillykorean.png' /></a>
+    <p class='copyright'>
+      Copyright ⓒ 2024 Danbies.com All rights reserved.
+    </p>
+  </div>
+</footer>
+<script type="text/javascript" src="./index.js"></script>
+
 </html>

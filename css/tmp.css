@@ -1,0 +1,128 @@
+/* * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #2a2c2d;
+  background-color: #f2f4f5; 
+} */
+
+.login__container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 24rem;
+  padding: 2.5rem 1.25rem 1.875rem 1.25rem;
+  position: relative;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__container-custom {
+  padding: 0;
+  border-radius: 12px 12px 10px 10px;
+}
+
+.login__container__header {
+  width: 100%;
+  height: 3.125rem;
+  background: linear-gradient(107deg, #7395d9 21.18%, #7532f9 82.67%);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login {
+  text-align: center;
+}
+
+.login__container__header__logo {
+  width: 5.188rem;
+  margin-left: 1.25rem;
+}
+
+.login__logo-custom {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+
+.login__form-custom {
+  padding: 2rem 1.25rem 1.875rem 1.25rem;
+}
+
+.text-input {
+  width: 100%;
+  position: relative;
+  padding-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text-input__field--theme-primary {
+  color: #7395d9;
+  font-size: 1.25rem;
+  border: 1px solid #7395d9;
+  padding: 0.938rem 1.063rem 0.938rem 3.5rem;
+  font-weight: 400;
+}
+
+.text-input__field {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.text-input__icon--theme-primary {
+  width: 1.375rem;
+  height: 1.375rem;
+  color: #7395d9;
+  top: 1.1rem;
+}
+
+.text-input__icon {
+  position: absolute;
+  left: 1.063rem;
+}
+
+.button__primary {
+  background-color: #7395d9;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.button__primary:hover {
+  background-color: #7532f9;
+}
+
+.button:hover {
+  transition: 0.4s ease;
+}
+
+.login__submit {
+  padding: 0.6rem;
+  width: 100%;
+  margin-top: 0.625rem;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  overflow: hidden;
+}
