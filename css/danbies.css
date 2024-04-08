@@ -204,7 +204,8 @@ header {
 }
 
 .photo-wr {
-  margin: 48px 12px;
+  /* margin: 48px 12px; */
+  margin: 48px 5.5px;
   display: flex;
   width: 120px;
   height: 180px;
@@ -379,11 +380,11 @@ footer div a {
 }
 
 .photo-bora {
-  background-image: linear-gradient(to bottom, rgba(15, 23, 45, 0.3) 40%, rgba(15, 23, 45, 1) 100%), url('../img/member/placeholder.jpg');
+  background-image: linear-gradient(to bottom, rgba(15, 23, 45, 0.3) 40%, rgba(15, 23, 45, 1) 100%), url('../img/member/bora.png');
 }
 
 .photo-yongjun {
-  background-image: linear-gradient(to bottom, rgba(15, 23, 45, 0.3) 40%, rgba(15, 23, 45, 1) 100%), url('../img/member/placeholder.jpg');
+  background-image: linear-gradient(to bottom, rgba(15, 23, 45, 0.3) 40%, rgba(15, 23, 45, 1) 100%), url('../img/member/yongjun.jpg');
 }
 
 .photo-danbi {
@@ -392,6 +393,10 @@ footer div a {
 
 .photo-hannah {
   background-image: linear-gradient(to bottom, rgba(15, 23, 45, 0.3) 40%, rgba(15, 23, 45, 1) 100%), url('../img/member/hannah.jpg');
+}
+
+.photo-hawoo {
+  background-image: linear-gradient(to bottom, rgba(15, 23, 45, 0.3) 40%, rgba(15, 23, 45, 1) 100%), url('../img/member/hawoo.jpg');
 }
 
 /* Mobile, <1000px */
