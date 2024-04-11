@@ -19,20 +19,20 @@
   <body class='body fi'>
     <header> 
       <img class='logo' src="./img/danbies-logo.png" />
-      <div class='menu-wr'>
-        <div id='js-link-danbies' onmouseout='handleMouseOut("danbies")' onmouseover='handleMouseOver("danbies")' onclick='handleScroll("js-danbies")' class='header-menu'>
+      <nav class='menu-wr'>
+        <div tabindex='0' id='js-link-danbies' onfocus='handleMouseOver("danbies")' onblur='handleMouseOut("danbies")' onmouseout='handleMouseOut("danbies")' onmouseover='handleMouseOver("danbies")' onkeydown='handleKeyDown(event, "js-danbies")' onclick='handleScroll("js-danbies")' class='header-menu'>
           Danbies
         </div>
-        <div id='js-link-products' onmouseout='handleMouseOut("products")' onmouseover='handleMouseOver("products")' onclick='handleScroll("js-products")' class='header-menu'>
+        <div tabindex='0' id='js-link-products' onfocus='handleMouseOver("products")' onblur='handleMouseOut("products")' onmouseout='handleMouseOut("products")' onmouseover='handleMouseOver("products")' onkeydown='handleKeyDown(event, "js-products")' onclick='handleScroll("js-products")' class='header-menu'>
           Products
         </div>
-        <div id='js-link-contact' onmouseout='handleMouseOut("contact")' onmouseover='handleMouseOver("contact")' onclick='handleScroll("js-contact")' class='header-menu'>
+        <div tabindex='0' id='js-link-contact' onfocus='handleMouseOver("contact")' onblur='handleMouseOut("contact")' onmouseout='handleMouseOut("contact")' onmouseover='handleMouseOver("contact")' onkeydown='handleKeyDown(event, "js-contact")' onclick='handleScroll("js-contact")' class='header-menu'>
           Contact
         </div>
-        <div onclick='handleMemberSite()' class='header-member-menu-wr'>
+        <div tabindex='0' onkeydown='handleKeyDown(event, "member")' onclick='handleMemberSite()' class='header-member-menu-wr'>
           <span class='header-member-menu'>Member Only</span>
         </div>
-      </div>
+      </nav>
     </header>
     <main role='main'>
       <div class='title-wr'>
@@ -85,14 +85,6 @@
             </div>
           </div>
           <div class='photo-wr photo-bottom'>
-            <div class='photo-frame photo-yung photo-mobile'>
-              <div class='name-wr'>
-                Security & Finance<br />
-                <span class='name'>Yung Lee</span>
-              </div>
-            </div>
-          </div>
-          <div class='photo-wr'>
             <div class='photo-frame photo-bora photo-mobile'>
               <div class='name-wr'>
                 UI/UX Design<br/>
@@ -100,7 +92,15 @@
               </div>
             </div>
           </div>
-          <div class='photo-wr photo-bottom'>
+          <!-- <div class='photo-wr photo-bottom'>
+            <div class='photo-frame photo-yung photo-mobile'>
+              <div class='name-wr'>
+                Security & Finance<br />
+                <span class='name'>Yung Lee</span>
+              </div>
+            </div>
+          </div> -->
+          <div class='photo-wr'>
             <div class='photo-frame photo-danbi photo-mobile'>
               <div class='name-wr'>
                 Lead FE Engineer<br />
@@ -109,7 +109,7 @@
             </div>
           </div>
 
-          <div class='photo-wr'>
+          <div class='photo-wr photo-bottom'>
             <div class='photo-frame photo-yongjun photo-mobile'>
               <div class='name-wr'>
                 Frontend Engineer<br />
@@ -125,13 +125,17 @@
               </div>
             </div>
           </div> -->
-          <div class='photo-wr photo-bottom'>
+          <div class='photo-wr'>
             <div class='photo-frame photo-hawoo photo-mobile'>
               <div class='name-wr'>
                 API Dev/ QA<br/>
                 <span class='name'>Hawoo Lim</span>
               </div>
             </div>
+          </div>
+          <div class='photo-wr photo-placeholder'>
+          </div>
+          <div class='photo-wr photo-placeholder'>
           </div>
 
         </div>

@@ -40,6 +40,16 @@ const handleScroll = id => {
   }); 
 }
 
+const handleKeyDown = (e, id) => {
+  if (e?.key === 'Enter') {
+    if (id === 'member') {
+      handleMemberSite();
+    } else {
+      handleScroll(id);
+    }
+  }
+}
+
 const main = () => {
 
 }

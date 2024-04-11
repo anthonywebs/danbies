@@ -204,11 +204,15 @@ header {
 }
 
 .photo-wr {
-  /* margin: 48px 12px; */
-  margin: 48px 10px;
+  /* margin: 48px 12px; SPACE BETWEEN*/
+  margin: 48px 1.5%;
   display: flex;
   width: 120px;
   height: 180px;
+}
+
+.photo-placeholder {
+  display: none;
 }
 
 .photo-bottom {
@@ -475,6 +479,11 @@ footer div a {
     height: 160px;
   }
 
+  .photo-placeholder {
+    display: flex;
+  }
+  
+
   .photo-frame {
     position: relative;
     width: 100%;
@@ -534,4 +543,5 @@ footer div a {
   .copyright {
     align-self: center;
   }
+
 }
